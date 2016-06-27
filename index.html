@@ -1,0 +1,1175 @@
+<!DOCTYPE html>  
+<html> 
+<head>
+<title>JQuery demo</title>
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<link rel="stylesheet" href="themes/fairTheme1.css" />
+  <link rel="stylesheet" href="themes/jquery.mobile.icons.min.css" />
+  
+<link rel="stylesheet" href="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.css" />
+<script src="http://code.jquery.com/jquery-1.11.1.min.js"></script>
+<script src="http://code.jquery.com/mobile/1.4.5/jquery.mobile-1.4.5.min.js"></script>
+
+<script src="lib/jquery.min.js"></script>
+<script src="lib/jquery-ui.min.js"></script>
+<script src="http://maps.google.com/maps/api/js?sensor=true"></script>
+<!--<link rel="apple-touch-icon" href="apple-touch-icon-48x48.png">
+<link rel="apple-touch-icon" sizes="72x72" href="apple-touch-icon-72x72.png">
+<link rel="apple-touch-icon" sizes="96x96" href="apple-touch-icon-96x96.png">
+<link rel="apple-touch-icon" sizes="144x144" href="apple-touch-icon-144x144.png">
+<link rel="apple-touch-icon" sizes="192x192" href="apple-touch-icon-192x192.png">-->
+
+</head>
+
+<body>	
+	
+	<div data-role="page" id="index" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index">Home</a>
+						
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center"><font class="text2"><strong>159th Harford Fair</strong></font><br />
+			<font class="text1"><strong>August 22 - 27, 2016</strong></font><br /><br />
+			<img class="convention" src="images/thursday16a.jpg" alt="Chris Janson / Old Dominion" width=100% /></p>
+			
+			<div data-role="navbar">
+				<ul>
+					<li><a href="#tableContents" data-transition="flip"><strong>Start Here!</strong></a></li>
+					
+				</ul>
+			</div>		
+			<p align="center"><a href="#liability" data-transition="flip"><font class="text11">Liability Statement</font></a><br /><font class="text11">Disclaimer: All information in this app subject to change.</font><br />
+			</p>
+		</div>
+		
+		<div data-role="footer">
+			<p align="center">&copy; Harford Agricultural Society 2016</p>
+		</div>	
+	</div>
+
+<!-- Table of Contents -->	
+	<div data-role="page" id="tableContents" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index">Home</a>
+			
+		</div>
+		
+		<div data-role="main" class="ui-content">	
+			
+			<!-- Entertainment page link -->
+			<div data-role="collapsible">
+				<h1>Entertainment</h1>
+				<p><a class="green" href="#mainArena" data-transition="flip">Main Arena</a><br />
+				<a class="green" href="#allWeek" data-transition="flip">All Week</a><br />
+				<a class="green" href="#shadePavilion" data-transition="flip">Shade Pavilion</a></p>
+			</div>
+			
+			<!-- Daily page link -->
+			<div data-role="collapsible">
+				<h1>Daily Schedule</h1>
+				<p>
+				<a href="#sundaySchedule" data-transition="flip">Sunday</a><br />
+				<a href="#mondaySchedule" data-transition="flip">Monday</a><br />
+				<a href="#tuesdaySchedule" data-transition="flip">Tuesday</a><br />
+				<a href="#wednesdaySchedule" data-transition="flip">Wednesday</a><br />
+				<a href="#thursdaySchedule" data-transition="flip">Thursday</a><br />
+				<a href="#fridaySchedule" data-transition="flip">Friday</a><br />
+				<a href="#saturdaySchedule" data-transition="flip">Saturday</a><br />
+				</p>
+			</div>
+	
+			<!-- Directions link -->
+			<div data-role="collapsible">
+				<h1>Directions</h1>
+				<p><a href="#directions" data-transition="flip">Directions</a></p>
+			</div>
+			
+			<!-- Purchase tickets link -->
+			<div data-role="collapsible">
+			   <h1>Purchase Tickets</h1>
+			   <p><a href="#tickets" data-transition="flip">Purchase Tickets</a><br /></p>
+			</div>
+	
+			<!-- Sponsors page  link -->
+			<div data-role="collapsible">
+			  <h1>Fair Sponsors</h1>
+			  <p><a href="#platinum" data-transition="flip">Platinum Sponsors</a></p>
+			  <p><a href="#gold" data-transition="flip">Gold Sponsors</a></p>
+			  <p><a href="#silver" data-transition="flip">Silver Sponsors</a></p>
+			  <p><a href="#bronze" data-transition="flip">Bronze Sponsors</a></p>
+			</div>
+	
+			<!--Vendors page link -->
+			<!--<div data-role="collapsible">
+			  <h1>Vendors</h1>
+			  <p><a class="green" href="#entertainment" data-transition="flip">Entertainment</a></p>
+			</div>-->
+	
+			<!-- Fair information link -->
+			<div data-role="collapsible">
+			  <h1>Fair Information</h1>
+			  <p><a class="green" href="#admissions" data-transition="flip">Fair Admission Policy</a></p>
+			</div>
+	
+			<!-- News page link -->
+			<div data-role="collapsible">
+			  <h1>Contact Us</h1>
+			  <p><a class="green" href="#contactUs" data-transition="flip">Fair Contacts</a></p>
+			</div>
+			
+			 For more information, visit our website <a href="http://www.harfordfair.com"> www.harfordfair.com</a>.
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>	
+	</div>
+
+<!-- Purchase tickets page -->
+	<div data-role="page" id="tickets" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>
+			
+			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center"><font class="text2">Purchase Tickets</font><br />For Shows and Gate admission</p>
+			<p align="center">
+				<a class="green" href="https://www.BlueRibbonFair.com/BRFairProd/BlueRibbonStart.aspx?ID=1845"><img src="images/buytickets.jpg" alt="Tickets" /></a><br /><br />
+				For more information, visit our website <a href="http://www.harfordfair.com"> www.harfordfair.com</a>
+			</p>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	
+	</div>
+
+	
+<!-- Main arena page -->
+	<div data-role="page" id="mainArena" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>
+			
+			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3>Main Arena</h3>
+			<p><font class="text9">Sunday<br /> 7:30 pm: Opening Ceremony<br /><br />
+			Monday<br /> 7:30 pm: Gas Mods and Stock Pickup Truck Pull<br /><br />
+			Tuesday<br />10:00 am: Farm Tractor Pull<br />7:30 pm: Hot Tractor Pull<br /><br />
+			Wednesday<br /> 9:30 am: Baby Show<br /> 2:00 pm: Antique Tractor Pull<br /> 7:30 pm: Truck Pull (Diesel: Mods &amp; Diesel Stock Pickups)<br /><br />
+			Thursday<br />10:00 am: Kiddy Tractor Pull ages 4 to 7<br />11:30 am: Kiddy Tractor Pull ages 8 to 10<br />7:30 pm: <strong>Old Dominion / Chris Janson</strong><br /><br />
+			Friday<br />10:00 am: Woodman's Contest<br />7:30 pm: <strong>Dave Martin's Championship Rodeo</strong><br /><br />
+			Saturday<br /> 9:00 am: Garden Tractor Pull<br />7:30 pm: <strong>$$ Jackpot $$ Demolition Derby</strong></font></p>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	
+	</div>
+	
+	<!-- Shade Pavilion page -->
+	<div data-role="page" id="shadePavilion" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3>Shade Pavilion</h3>
+			<p><font class="text9">Monday<br />12:30: &nbsp;Illusions by Jeremy<br />2:30: Stanley Kalafut &amp; The Brass Majors<br />4:30: Stanley Kalafut &amp; The Brass Majors<br />6:00: &nbsp;Fair Pie & Cake Auction<br />
+			8:00: &nbsp;Them Boys<br /><br />
+			Tuesday<br />12:30: &nbsp;Mountain View Chimettes<br />12:30: &nbsp;Tri-State Gospel Singers<br />4:30: &nbsp;Dani-elle<br />7:30: &nbsp;Dani-elle<br /><br />
+			Wednesday<br />12:30: &nbsp;Old Time Fiddlers<br />2:30: &nbsp;Illusions by Jeremy<br />4:30: &nbsp;Old Time Fiddlers<br />7:00: &nbsp;The Tomahawks<br /><br />
+			Thursday<br />2:30: &nbsp;The Jason Wicks Band<br />6:00 pm: &nbsp;The Jason Wicks Band<br /><br />
+			Friday<br />12:30: &nbsp;Alex Creamer<br />2:30: &nbsp;Windwood Hill Dance Academy<br />4:30: &nbsp;SNMBC Praise Team<br />7:30: &nbsp;Infinity<br /><br />
+			Saturday<br />11:00: &nbsp;Turkey Calling Contest<br />12:30: &nbsp;Lenoxville Band<br />3:30: &nbsp;Lenoxville Band<br />7:30: &nbsp;amRadio</font></p>
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	
+	</div>
+	
+<!-- All Week page -->
+	<div data-role="page" id="allWeek" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">159th Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>		
+		</div>
+		
+		<div data-role="main" class="ui-content">			
+			
+			<p align="center"><font class="text9">
+			<font class="text4">All Week at the Harford Fair</font><br /><br />
+			<u>Midway entertainment by:</u><br />
+			<a href="http://www.jimhoughtonenterprises.com"><img src="images/houghtonLogo.jpg" alt="Houghton Logo" height=80px /></a><br />Click icon for fair ride specials<br /></font></p>
+			
+			<p align="center"><font class="text9"><u>North Arena</u><br /><strong>Brunon Blaszak's Royal Bengal Tigers</strong><br />
+			<img src="images/tiger02b.jpg" alt="Royal Bengal Tigers" width=90% /><br />Visit their <a href="http://brunostigers.com/">website</a></font></p>
+			<p align="center"><font class="text9"><u>New property - South End</u><br /><strong>Panfilov's Performing Pets</strong><br />
+			<img src="images/panfilova02a.jpg" alt="Panfilov's Performing Pets" width=90% /><br />
+			Visit their <a href="http://panfilov.webs.com/">website</a></font></p>
+			
+			<p align="center"><font class="text9"><u>Chainsaw Carving Demonstration</u><br />by Kevin Treat<br />
+			<img src="images/woodCarver.jpg" alt="Chainsaw Carving" width=70% /><br />
+			Visit his <a href="http://www.sawptician.com" />website</a></font></p>			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+	
+	</div>
+
+	<!-- Sunday page -->
+	<div data-role="page" id="sundaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>
+			
+			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Sunday Schedule</h3>
+			<font class="text9">
+		    <p class="small">2:00: &nbsp;Draft Horse &amp; Pony Show</p>
+			<p class="smallColor">3:00: &nbsp;Fair Queen Contest Preliminary<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Dining Hall<br /></p>
+			<p class="small">4:00: &nbsp;4-H Rabbit Roundup</p>
+			<p class="smallColor">7:00: &nbsp;Main Arena - Official Opening<br /><br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;25th Annual Queen Coronation<br /><br />
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Music by 'Good News'</p>
+			<p class="small">9:15: Fireworks</p>				
+			</font>
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>	
+	
+	
+	<!-- Monday page -->
+	<div data-role="page" id="mondaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Monday Schedule</h3>
+		<font class="text9">
+			<p align="center">	
+				8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
+			<p class="small">  
+			   6-8:00:&nbsp;&nbsp;Horse Pull weigh in</p>
+			
+			 <p class="smallColor">  
+			   9:00:&nbsp;&nbsp;Horse Pulling Contest</p>
+			 <p class="small">  
+			   9:00:&nbsp;&nbsp;Poultry, Waterfowl, Pigeon Judging</p>
+			 <p class="smallColor">
+				10:00:&nbsp;&nbsp;4-H &amp; Exhibit Buildings Open to Public</p>
+			 <p class="small"> 
+				12:00: Dining Hall Opens - Pomona Grange</p>
+			 <p class="smallColor">
+				12:00:&nbsp;&nbsp;4-H Beef Show</p>
+			 <p class="small">
+				12:00: &nbsp;Chainsaw Carving</p>
+			 <p class="smallColor">
+				12:30: &nbsp;Illusions by Jeremy</p>
+			 <p class="small">
+				1:00: &nbsp;Panfilov's Performing Pets</p>
+			 <p class="smallColor">
+				2:30: &nbsp;Stanley Kalafut &amp; The Brass Majors</p>
+			 <p class="small">
+				3:00: &nbsp;Chainsaw Carving</p>
+			 <p class="smallColor">	
+				3:30: &nbsp;Panfilov's Performing Pets</p>
+			 <p class="small">
+				4:30: &nbsp;Stanley Kalafut &amp; The Brass Majors</p>
+			 <p class="smallColor">
+				5:00: &nbsp;Master Gardeners of Susq County - Using water wisely
+			 <p class="small">
+				6:00: &nbsp;Pie and Cake Auction</p>
+			 <p class="smallColor">
+				6:00: &nbsp;4-H Dairy Goat Show</p>
+			 <p class="small">
+				6:00: &nbsp;Royal Bengal Tigers</p>
+			 <p class="smallColor">
+				7:00: &nbsp;Panfilov's Performing Pets</p>
+			 <p class="small">
+				7:00: &nbsp;Chainsaw Carving</p>
+			 <p class="smallColor">
+				7:30: &nbsp;Truck Pulls &#45; (Gas) &amp; Semi Trucks</p>
+			 <p class="small">
+				8:00: &nbsp;Them Boys</p>
+			</font> 
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>
+
+<!-- Tuesday page -->
+	<div data-role="page" id="tuesdaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Tuesday - DTE Energy Day</h3>
+			<font class="text9"><p align="center">	
+				8:00: Gates Open for Admission<br />12 and up $6.00 - 11 and under Free</p>
+			<p class="smallColor">
+				8:00: &nbsp;Swine Market classes</p>
+			<p class="small">
+				10:00: &nbsp;Farm Tractor Pull</p>
+			<p class="smallColor">
+				10:00: &nbsp;4-H & Exhibit Buildings Open</p>
+			<p class="small">
+				12:00: &nbsp;Dining Hall opens - Knights of Columbus, Council 356, Great Bend</p>
+			<p class="smallColor">
+				12:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="small">
+				12:30: &nbsp;Mountain View Chimettes</p>
+			<p class="smallColor">
+				1:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				2:00: &nbsp;4-H Sheep Show followed by<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;4-H Market Goat show</p>
+			<p class="smallColor">
+				2:00: &nbsp;Royal Bengal Tigers</p>			
+			<p class="small">
+				3:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				3:30: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				4:30: &nbsp;Dani-elle</p>
+			<p class="smallColor">
+				6:00: &nbsp;Royal Bengal Tigers</p>					
+			<p class="small">
+				7:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				7:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				7:30: &nbsp;Dani-elle</p>
+			<p class="smallColor">
+				7:30: &nbsp;Dairy Show &#45; Youth and Open - Brown Swiss, Guernsey, Milking Shorthorn</p>
+			<p class="small">
+				7:30: &nbsp;Hot Tractor Pull</p></font>			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>		
+
+<!-- New Wednesday page -->
+	<div data-role="page" id="wednesdaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Wednesday - PA Lottery Day</h3>
+			<font class="text9">
+			<p align="center">
+			Senior Citizen's Day<br />Anyone over 60 - Admission $5.00<br />8 am to 5 pm only<br />
+			12 and up $6.00 - 11 and under Free</p>
+			
+			<p class="small">
+				8:00: Gates Open for Admission</p>
+			<p class="smallColor">
+				9:00: &nbsp;Horses - Halter &amp; Showmanship Classes</p>
+			<p class="small">
+				9:00: &nbsp;Goat Show</p>
+			<p class="smallColor">
+				9:00: &nbsp;Baby Show</p>
+			
+			<p class="small">
+				10:00: &nbsp;4-H & Exhibit Buildings Open to Public</p>
+			<p class="smallColor">
+				10:00: &nbsp;Dairy Show - Youth and Open - Jersey, Ayrshire, Red & White</p>
+			<p class="small">
+				12:00: &nbsp;Dining Hall Opens - New Milford Baptist Church</p>
+			<p class="smallColor">
+				12:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				12:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				12:30: &nbsp;Old Time Fiddlers</p>
+			<p class="small">
+				1:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				1:00: &nbsp;Antique Tractor Pull</p>
+			<p class="small">
+				2:30: &nbsp;Illusions by Jeremy</p>
+			<p class="smallColor">
+				3:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				3:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				4:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="small">
+				4:00: &nbsp;Sheep Shearing Demonstration</p>
+			<p class="smallColor">
+				4:30: &nbsp;Old Time Fiddlers</p>
+			<p class="small">
+				5:00: &nbsp;Master Gardeners of Susq County - Cover Crops
+			<p class="smallColor">
+				6:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				6:00: &nbsp;Sheep Shearing Demonstration</p>
+			<p class="smallColor">
+				6:00: &nbsp;Animal Costume Contest</p>
+			<p class="small">
+				7:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				7:00: &nbsp;The Tomahawks</p>
+			<p class="small">
+				7:30: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				7:30: &nbsp;Diesel Truck Pull</p></font>						
+		</div>
+	
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+	</div>
+	
+
+
+	<!-- Thursday page -->
+	<div data-role="page" id="thursdaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Thursday<br />Popple Construction Day</h3>
+			<font class="text9">
+			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
+			<p class="small">
+				9:00: &nbsp;4-H Swine Master Exhibitor Show</p>
+			<p class="smallColor">
+				9:30: &nbsp;Registration for Kiddy Tractor Pull</p>
+			<p class="small">
+				10:00: &nbsp;4-H & Exhibit Buildings Open</p>
+			<p class="smallColor">
+				10:00: &nbsp;Kiddy Tractor Pull-Ages 4-7</p>
+			
+			<p class="small">
+				11:30: &nbsp;Kiddy Tractor Pull-Ages 8-10</p>
+			<p class="smallColor">
+				12:00 &nbsp;Dining Hall Opens - Harford Congregational Church</p>
+			<p class="small">
+				12:00 &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				1:00: &nbsp;Beef Cattle Show</p>
+			<p class="small">
+				1:00: &nbsp;Royal Bengal Tigers</p>			
+			<p class="smallColor">
+				2:00: &nbsp;Wool Demonstration</p>
+			<p class="small">
+				2:30: &nbsp;The Jason Wicks Band</p>
+			<p class="smallColor">
+				3:00: &nbsp;Chainsaw Carving-Kevin Treat</p>		
+			<p class="small">
+				3:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="smallColor">
+				4:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="small">
+				4:00: &nbsp;Sheep Shearing Demonstration</p>
+			<p class="smallColor">
+				5:00: &nbsp;Master Gardeners of Susq County - Cover Crops</p>
+			<p class="small">
+				5:00: &nbsp;4-H Livestock Master Exhibitor Contest</p>
+			<p class="smallColor">
+				6:00: &nbsp;The Jason Wicks Band</p>
+			<p class="small">
+				6:00: &nbsp;Horse Barrel Show</p>
+			<p class="smallColor">
+				6:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				6:00: &nbsp;Master Gardeners of Susq County - Gardening with Herbs</p>			
+			<p class="smallColor">
+				7:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="small">
+				7:30: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				7:30: &nbsp;Old Dominion / Chris Janson</p></font>			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>	
+
+	<!-- Friday page -->
+	<div data-role="page" id="fridaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Friday Schedule</h3>
+			<font class="text9">
+			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
+			<p class="smallColor">
+				9:00: &nbsp;Closed Exhibitor's Horse Show</p>
+			<p class="small">
+				9:00: &nbsp;Woodsman's Contest</p>
+			<p class="smallColor">
+				10:00: &nbsp;4-H &amp; Exhibit Buildings Open to Public</p>
+			<p class="small">
+				10:00: &nbsp;Sheep Show</p>
+			<p class="smallColor">
+				10:00: &nbsp;Dairy Show - Holstein Youth &amp; Open</p>
+			<p class="small">
+				12:00: &nbsp;Dining Hall Opens</p>
+			<p class="smallColor">
+				12:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="small">
+				12:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="smallColor">
+				12:30: &nbsp;Alex Creamer</p>
+			<p class="small">
+				1:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				2:00: &nbsp;Master Gardeners of Susq County - Using water wisely in the garden</p>
+			<p class="small">
+				2:30: &nbsp;Windwood Hill Dance Academy</p>
+			<p class="smallColor">
+				3:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="small">
+				3:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="smallColor">
+				4:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="small">
+				4:00: &nbsp;Master Gardeners of Susq County - Cover Crops</p>
+			<p class="smallColor">
+				4:00: &nbsp;Sheep Shearing Demonstration</p>
+			<p class="small">
+				4:30: &nbsp;SNMBC Praise Band</p>
+			<p class="smallColor">
+				6:00: &nbsp;"Fun" Dairy Showmanship Contest</p>
+			<p class="small">
+				6:00: &nbsp;Master Gardeners of Susq County - Butterflies and the gardens they love</p>
+			<p class="smallColor">
+				6:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				7:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				7:30: &nbsp;Infinity</p>
+			<p class="small">
+				7:30: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				7:30: &nbsp;Dave Martin's Championship Rodeo</p></font>
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>	
+	
+<!-- Saturday page -->
+	<div data-role="page" id="saturdaySchedule" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Saturday Schedule<br />NEP Telephone Day</h3>
+			<font class="text9">
+			<p align="center">8:00: Gates Open for Admission<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;12 and over - $6.00<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;11 and under - Free</p>
+			<p class="small">
+				8:30: &nbsp;Open Horse Show</p>
+			<p class="smallColor">
+				9:00: &nbsp;Garden Tractor Pull</p>
+			<p class="small">
+				10:00: &nbsp;4-H &amp; Exhibit Buildings open to Public</p>			
+			<p class="smallColor">
+				10:00: &nbsp;4-H Livestock Sale</p>
+			<p class="small">
+				10:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				11:00: &nbsp;Turkey Calling Contest</p>
+			<p class="small">
+				12:00: &nbsp;Dining Hall Opens - United Fire Company, Montrose, PA</p>
+			<p class="smallColor">
+				12:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="small">
+				12:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="smallColor">
+				12:30: &nbsp;Lenoxville Band</p>
+			<p class="small">
+				1:00 &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				1:00: &nbsp;Master Gardeners of Susq County - Gardening with herbs</p>
+			<p class="small">
+				2:30: &nbsp;Master Gardeners of Susq County - Cover Crops</p>
+			<p class="smallColor">
+				3:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="small">
+				3:00: &nbsp;Chainsaw Carving-Kevin Treat</p>
+			<p class="smallColor">
+				3:30: &nbsp;Lenoxville Band</p>
+			<p class="small">
+				4:00: &nbsp;Chainsaw Carving Auction</p>
+			<p class="smallColor">
+				4:00: &nbsp;Master Gardeners of Susq County - Butterflies and the gardens they love</p>
+			<p class="small">
+				4:30: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				6:00: &nbsp;Master Gardeners of Susq County - Using water wisely in the garden</p>
+			<p class="small">
+				6:00: &nbsp;Panfilov's Performing Pets</p>
+			<p class="smallColor">
+				6:00: &nbsp;Peoples Security Bank & Trust - The Grand Cash Roundup</p>
+			<p class="small">
+				7:00: &nbsp;Royal Bengal Tigers</p>
+			<p class="smallColor">
+				7:30: &nbsp;amRadio</p>
+			<p class="small">
+				7:30: &nbsp;$$ Jackpot $$ Demolition Derby</p>
+			</font>
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>	
+	
+
+	
+	<!-- Directions page -->
+	<div data-role="page" id="directions" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<h2 align="center">Directions</h2>
+			<p>
+				
+			<p class="just04"><b>From the South (Scranton)</b></p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text7">Take Route 81 North to Harford Exit 217, at end of ramp turn left.  Go approximately 1 mile to stop sign.  Turn right up hill.  Fair grounds at the top of the hill.</font><br /><br />
+			<p class="just04"><b>From the North (Binghamton)</b></p>
+			&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<font class="text7">Take Route 81 South to Harford Exit 217, at end of ramp turn right.  Go approximately 1 mile to stop sign.  Turn right up hill.  Fair grounds at the top of the hill.</font><br /><br />
+			<p class="just04"><b>GPS: 485 Fair Hill Rd, New Milford, Pa. 18834</b></p>
+			<p class="just04">On some GPS simply enter Harford Fair Grounds, Harford, Pa</p><br />
+			<br /><p align="center">
+              <iframe width="425" height="350" frameborder="0" scrolling="no" marginheight="0" marginwidth="0" src="https://maps.google.com/maps?f=q&amp;source=s_q&amp;hl=en&amp;geocode=&amp;q=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,+Harford,+PA&amp;aq=0&amp;oq=harford+fair+grounds,+harford,+pa&amp;sll=41.801135,-75.702496&amp;sspn=0.110691,0.222988&amp;ie=UTF8&amp;hq=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,&amp;hnear=Harford,+Susquehanna+County,+Pennsylvania&amp;t=m&amp;ll=41.792392,-75.698069&amp;spn=0.022201,0.007717&amp;output=embed"></iframe><br /><small><a href="https://maps.google.com/maps?f=q&amp;source=embed&amp;hl=en&amp;geocode=&amp;q=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,+Harford,+PA&amp;aq=0&amp;oq=harford+fair+grounds,+harford,+pa&amp;sll=41.801135,-75.702496&amp;sspn=0.110691,0.222988&amp;ie=UTF8&amp;hq=Harford+Fair+Grounds,+Fair+Hill+Road,+New+Milford,&amp;hnear=Harford,+Susquehanna+County,+Pennsylvania&amp;t=m&amp;ll=41.792392,-75.698069&amp;spn=0.022201,0.007717" style="color:#0000FF;text-align:left">View Larger Map</a></small></p>
+			  <p align="center">
+			  Traveling Far to Visit Our Fair?<br />Here are some great places to stay.</p>
+			  <font class="text7">
+			  
+			  <div class="ui-grid-solo">
+				 <div class="ui-block-a"><span><a href="http://www.colonialbrickinn.com"><font size=+1>www.colonialbrickinn.com</font></a></span></div>
+				<div class="ui-block-a"><span>Phone: (570) 879-2162</span></div>
+			</div>		
+			<br />
+			
+			 <div class="ui-grid-solo">
+				 <div class="ui-block-a"><span><font size=+1>Holiday Inn Express (Gibson)</font></span></div>
+				<div class="ui-block-a"><span>Phone: (570) 465-5544</span></div>
+			</div>		
+			<br />
+			
+			<div class="ui-grid-solo">
+				 <div class="ui-block-a"><span><a href="http://www.shoreforestcampground.com" / >www.shoreforestcampground.com</a></span></div>
+				<div class="ui-block-a"><span>Phone: (570) 289-4666</span></div>
+			</div>		
+			<br />
+			
+			<div class="ui-grid-solo">
+				 <div class="ui-block-a"><span><a href="http://www.stone-bridge-inn.com" / >www.stone-bridge-inn.com</a></span></div>
+				<div class="ui-block-a"><span>Inn phone: (570) 679-9200</span></div>
+			</div>		
+			<br />
+			</font>
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+		
+	
+	</div>
+	
+	
+<!-- Admissions Info page -->	
+	<div data-role="page" id="admissions" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>		
+		</div>
+
+
+	
+		<div data-role="main" class="ui-content">
+			<h3 align="center">Fair Admissions Policy</h3><font class="text9">
+			<ul>
+			<li>FREE PARKING</li><br />
+			<li>GRANDSTAND RESERVED SEATING</li><br />
+			<li>Single Admissions: 12 years and up $6.00 - Children 11 and under - FREE</li><br />
+			<li>Members of the Armed Forces with valid ID - FREE</li><br />
+			<li>Scouts in Class A uniforms FREE</li><br />
+			<li>Wednesday is <b>Senior Citizen's Day</b> - 8 AM to 5 PM ONLY, 60 years and over $5.00</li></ul></font></p>
+			<p align="center"><font class="text9"><b>No pets permitted on the fairgrounds</b> - Service Animals Only</font></p><br />		
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+	
+	</div>
+	
+<!-- Contact us page -->		
+	<div data-role="page" id="contactUs" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>		
+		</div>
+
+
+	
+		<div data-role="main" class="ui-content">
+			<p align="center">
+			<u>Harford Agricultural Society</u><br />Directors<br />
+					   President: Dr. Michael Kowalewski<br />
+					   First vice&#45;President: Jason Miller<br />
+					   Second vice&#45;President:  Cindy Reynolds<br />
+					Treasurer: Mark Pease <br />
+					
+					Brandon Bennett<br />
+					Adam Diaz<br />
+					Matt Holbrook<br />
+					Kurt Kulick<br />
+					Heidi Stephens-Pavelski<br />
+					Ron Stiles<br />
+					Brian Tyler<br />
+					David Tyler</p>
+					
+					<p align="center" class="lineHeight2">
+				<font class="text17"><u>Harford Fair Secretary</u></font><br />
+					LouAnn Kiefer (570) 434&#45;4315<br />
+				hfair@nep.net</p>
+					
+					<p align="center" class="lineHeight2">
+				<font class="text17"><u>Commercial Space Secretary</u></font><br />
+					Donna Lewis (570) 434&#45;4302<br />
+				hfairspace@nep.net
+				<br /><br />
+				Mailing Address: 485 Fair Hill Rd., New Milford PA 18834<br />
+				Office Phone: 570-434-4300<br />
+				Office Fax: 570-434-4310<br />
+				E-mail: hfair@nep.net<br /><br />
+				<a href="https://www.facebook.com/pages/Harford-Fair/162001413972493"><img class="leftCol" src="images/likeUs3.jpg" alt="Like Us" /></a></p></p><br />
+			
+		</div>
+		
+		<div data-role="footer">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+	
+	</div>
+
+<!-- Liability page -->		
+	<div data-role="page" id="liability" data-theme="e">
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>		
+		</div>
+
+
+	
+		<div data-role="main" class="ui-content">
+			<p class="just01"><font class="text11">
+				Liability Statement:<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;All persons (patrons) who enter the property (Fairgrounds) of the Harford Agricultural Society and use any of the facilities for the purpose of exhibiting, displaying, competing, or in any other manner participating in the Harford Fair, do so at their own risk.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;These patrons acknowledge they have voluntarily chosen to participate in the activities of the Harford Fair. Patrons are also aware that the activities of the Harford Fair may expose them to dangers associated with live animals, amusement rides, demolition derbies, tractor and truck pulls, and similar events.<br />&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;Patrons acknowledge these dangers and accept all risk of injury or death. Patrons also agree to hold harmless the Harford Agricultural Society, its Members, Directors, Agents, Employees, Volunteers, and Contractors for any damage or loss which might occur to any animal, vehicle, or equipment which they choose to bring to the Fairgrounds.</font>
+				
+			</p><br />
+			
+		</div>
+		
+		<div data-role="footer" data-position="fixed">
+			<p>&copy; Harford Agricultural Society 2016</p>
+		</div>
+	
+	</div>
+	
+<!-- Bronze Sponsors page -->
+	<div data-role="page" id="bronze" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center">2016 Harford Fair Sponsors</p>
+			<p align="center">Bronze</p><hr />
+			
+			<div class="ui-grid-solo">
+				 <div class="ui-block-a"><span>Allens Radiator and Air Conditioning</span></div>
+				<div class="ui-block-a"><span>Barhite Sales & Rentals</span></div>
+			
+				 <div class="ui-block-a"><span>Binghamton Truck and Tire Center</span></div>
+				<div class="ui-block-a"><span>Blueberry Hill Farm Greenhouses</span></div>
+			
+			
+				 <div class="ui-block-a"><span>Brad's Southwest Gallery</span></div>
+				<div class="ui-block-a"><span>Briechle Law Offices PC</span></div>
+			
+				 <div class="ui-block-a"><span>Burning Bush Petroleum Inc.</span></div>
+				<div class="ui-block-a"><span>Clavarack Rural Electric Cooperative</span></div>
+			
+				 <div class="ui-block-a"><span>Clifford Auto Center</span></div>
+				<div class="ui-block-a"><span>Cochecton Mills</span></div>
+			
+				 <div class="ui-block-a"><span>Conklin's Cycle</span></div>
+				<div class="ui-block-a"><span>Corky's Garden Path Greenhouse</span></div>
+			
+				 <div class="ui-block-a"><span>Cosmello's Auto Sales & Scrap</span></div>
+				<div class="ui-block-a"><span>C & S Towing</span></div>
+			
+				 <div class="ui-block-a"><span>Diaz Companies</span></div>
+				<div class="ui-block-a"><span>Down to Earth Equipment Rentals</span></div>
+			
+				 <div class="ui-block-a"><span>Earth Farm Studios-Building Designers</span></div>
+				<div class="ui-block-a"><span>Endless Mountains Antique Power Association</span></div>
+				
+				<div class="ui-block-a"><span>Endless Mountains Poultry Association</span></div>
+				<div class="ui-block-a"><span>Frito-Lay</span></div>
+				
+				 <div class="ui-block-a"><span>Glezen's Sawmill Inc.</span></div>
+				<div class="ui-block-a"><span>Greenfield Power Equipment Inc.</span></div>
+				
+				 <div class="ui-block-a"><span>Hansen Equipment Inc.</span></div>
+				<div class="ui-block-a"><span>Harvatine Construction</span></div>
+				
+				 <div class="ui-block-a"><span>Holbrook Lawn Care and Snow Removal</span></div>
+				<div class="ui-block-a"><span>Holiday Inn Express, Gibson</span></div>
+				
+				 <div class="ui-block-a"><span>Dawn Koehler Insurance Agency LLC</span></div>
+				<div class="ui-block-a"><span>Kost Tire & Auto Service, Montrose & Forest City</span></div>
+				
+				 <div class="ui-block-a"><span>K.W. Oil Co Inc.</span></div>
+				<div class="ui-block-a"><span>Kenworth of Pennsylvania</span></div>
+				
+				 <div class="ui-block-a"><span>Loch's Maple Fiber Mill Inc.</span></div>
+				<div class="ui-block-a"><span>Marcho's Feeds</span></div>
+				
+				 <div class="ui-block-a"><span>Matthews Ford-Planet Preowned</span></div>
+				<div class="ui-block-a"><span>McDonald's</span></div>
+				
+				<div class="ui-block-a"><span>Montrose Feed & Supply</span></div>
+				<div class="ui-block-a"><span>Montrose Produce</span></div>
+				
+				<div class="ui-block-a"><span>NAPA-Montrose Auto Parts Inc.</span></div>
+				<div class="ui-block-a"><span>Nicholson Tire Service, Inc.</span></div>
+				
+				<div class="ui-block-a"><span>Orson's Best Greenhouse</span></div>
+				<div class="ui-block-a"><span>Precision Glass</span></div>
+				
+				<div class="ui-block-a"><span>Price Chopper</span></div>
+				<div class="ui-block-a"><span>Reeves Rent-A-John, Inc.</span></div>
+				
+				<div class="ui-block-a"><span>Ross Feeds</span></div>
+				<div class="ui-block-a"><span>Atty Paul T Rushton, Rosenn, Jenkins & Greenwald LLP</span></div>
+				
+				<div class="ui-block-a"><span>Summit Workwear</span></div>
+				<div class="ui-block-a"><span>Susquehanna County Services for Children & Youth</span></div>
+				
+				<div class="ui-block-a"><span>VanCott's Nursery & Landscaping LLC</span></div>
+				<div class="ui-block-a"><span>Walmart</span></div>
+				
+				<div class="ui-block-a"><span>Wegman's</span></div>
+				<div class="ui-block-a"><span>Wilcox's General Services LLC</span></div>
+			</div>
+			
+		</div>
+		
+		<div data-role="footer">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	</div>
+
+<!-- Silver Sponsors page -->
+	<div data-role="page" id="silver" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center">2016 Harford Fair Sponsors</p>
+			<p align="center">Silver</p><hr />
+			
+			<div class="ui-grid-solo">
+				 <div class="ui-block-a"><span>Andre and Son</span></div>
+				<div class="ui-block-a"><span>Diaz Forest Products</span></div>
+			
+				 <div class="ui-block-a"><span>Drake Well Drilling</span></div>
+				<div class="ui-block-a"><span>Endless Mountain Stone Company</span></div>
+			
+				 <div class="ui-block-a"><span>Jonal's Lawn and Garden</span></div>
+				<div class="ui-block-a"><span>Lindsey Lawn & Garden</span></div>
+			
+				 <div class="ui-block-a"><span>Misner Ag Insurance</span></div>
+				<div class="ui-block-a"><span>New Milford Hardware</span></div>
+			
+				 <div class="ui-block-a"><span>Ordie Price's Sawmill Inc.</span></div>
+				<div class="ui-block-a"><span>Peoples Security Bank</span></div>
+			</div>			
+			
+		</div>
+		
+		<div data-role="footer">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	</div>
+	
+<!-- Gold Sponsors page -->
+	<div data-role="page" id="gold" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center">2016 Harford Fair Sponsors</p>
+			<p align="center">Gold</p><hr />
+			
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="https://www.communitybankna.com/index.htm"><img src="Sponsors/communityBank2.jpg" alt="Community Bank" /></a></span></div>
+				<div class="ui-block-b"><span>Community Bank N.A.</span></div>
+			</div>		
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.bartronsupply.com/"><img src="Sponsors/bartronsupply2.jpg" alt="Bartron Supply"></a></span></div>
+				<div class="ui-block-b"><span>Bartron Supply Company</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="https://www.facebook.com/pages/Molenkos-Paint-Shop-Sign-Graphics/912803655412769" ><img src="Sponsors/molenko2.jpg" alt="Molenko's"></a></span></div>
+				<div class="ui-block-b"><span>Molenko's Paint Shop & Graphics</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.bakertilly.com/" ><img src="Sponsors/bakertilly2.jpg" alt="Baker Tilly"></a></span></div>
+				<div class="ui-block-b"><span>Baker Tilly</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="https://www.adamscable.com/" ><img src="Sponsors/adamscable2.jpg" alt="Adams Cable"></a></span></div>
+				<div class="ui-block-b"><span>Adams Cable</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><span><a href="http://lopyauctions.com/" ><img src="Sponsors/lopatofsky2.jpg" alt="Lopatofsky"></a></span></div>
+				<div class="ui-block-b"><span>Lopatofsky Auction LLC</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.nbtbank.com/home.html" ><img src="Sponsors/nbtbank2.jpg" alt="NBT"></a></span></div>
+				<div class="ui-block-b"><span>NBT Bank</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://pumpnpantry.com/" ><img src="Sponsors/pump2.jpg" alt="Pump-N-Pantry"></a></span></div>
+				<div class="ui-block-b"><span>Pump-N-Pantry</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="https://www.visionsfcu.org/" ><img src="Sponsors/visions2.jpg" alt="Visions"></a></span></div>
+				<div class="ui-block-b"><span>Visions Federal Credit Union</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><span><a href="http://www.rbfries.com/" ><img src="Sponsors/rbFries2.jpg" alt="RBFries"></a></span></div>
+				<div class="ui-block-b"><span>R.B.Fries</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				<div class="ui-block-a"><span><a href="http://www.fastline.com/v100/farm-equipment-dealers/LENOX-FARM-SUPPLY-HOP-BOTTOM-PA/0c1c3248-0487-44c0-b388-27ab98395c69.aspx" ><img src="Sponsors/lenoxsupply2.jpg" alt="Lenox Farm Supply"></a></span></div>
+				<div class="ui-block-b"><span>Lenox Farm Supply</span></div>
+			</div>
+			
+		</div>
+			<div data-role="footer">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+	</div>
+<!-- Platinum Sponsors page -->
+	<div data-role="page" id="platinum" data-theme="e">
+	
+		<div data-role="header">
+			<a href="javascript:history.go(-1)">Back</a>
+			<p align="center">2016 Harford Fair</p>
+			<a href="#index" data-transition="flip">Home</a>			
+		</div>
+		
+		<div data-role="main" class="ui-content">
+			<p align="center">2016 Harford Fair Sponsors</p>
+			<p align="center">Platinum</p><hr />
+			
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.nep.net"><img src="Sponsors/nep3.jpg" alt="NEP" /></a></span></div>
+				<div class="ui-block-b"><span>North East Pa Telephone Co.</span></div>
+			</div>		
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="https://www.newlook.dteenergy.com/wps/wcm/connect/dte-web/home"><img src="Sponsors/dte02.jpg" alt="DTE Energy"></a></span></div>
+				<div class="ui-block-b"><span>DTE Energy</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.lenoxpropane.net/" ><img src="Sponsors/lenoxpropane2.jpg" alt="Lenox Propane"></a></span></div>
+				<div class="ui-block-b"><span>Lenox Propane</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.endlesscare.org/" ><img src="Sponsors/endlessmtn2.jpg" alt="Endless Mountain Health"></a></span></div>
+				<div class="ui-block-b"><span>Endless Mountains Health Systems</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.palottery.state.pa.us" ><img src="Sponsors/paLottery2.jpg" alt="PA Lottery"></a></span></div>
+				<div class="ui-block-b"><span>Pennsylvania Lottery</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.poppleconstruction.com/" ><img src="Sponsors/poppleLogo2.jpg" alt="Popple Construction, Inc."></a></span></div>
+				<div class="ui-block-b"><span>Popple Construction, Inc.</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.swn.com/" ><img src="Sponsors/swnLogo2.jpg" alt="Southwestern Energy"></a></span></div>
+				<div class="ui-block-b"><span>Southwestern Energy</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://www.chiefog.com/" ><img src="Sponsors/chief2.jpg" alt="Chief Oil & Gas"></a></span></div>
+				<div class="ui-block-b"><span>Chief Oil & Gas LLC</span></div>
+			</div>
+			
+			<br />
+			<div class="ui-grid-a">
+				 <div class="ui-block-a"><span><a href="http://co.williams.com//" ><img src="Sponsors/williams3.jpg" alt="Williams"></a></span></div>
+				<div class="ui-block-b"><span>Williams</span></div>
+			</div>
+			
+		</div>
+	
+		
+		
+		<div data-role="footer">
+			<h1>&copy; Harford Agricultural Society 2016</h1>
+		</div>
+		
+	
+	</div>
+	
+	
+
+
+
+
+
+	
+</body>
+</html>
